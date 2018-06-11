@@ -1,9 +1,10 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
 
-function addElementToBeginningOfArray(arr, element) { 
-  return [element, ...arr]
+function addElementToBeginningOfArray(array, element) { 
+  return [element, ...array]
 }
 
-function destructivelyAddElementToBeginningOfArray(arr, element) { 
-  return arr.unshift(element)
+function destructivelyAddElementToBeginningOfArray(array, element) { 
+  array.unshift(element)
+  return array
 }
